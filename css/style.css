@@ -188,11 +188,10 @@ html {
   font-family: "effra", sans-serif; }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
   color: #7f2e92;
-  display: inline; }
+  display: block; }
 
 h1 {
   font-size: 2.441em; }
@@ -217,7 +216,9 @@ p.large {
   font-size: 1.25em; }
 
 .underline {
-  display: inline; }
+  display: inline;
+  border-bottom: 2px solid #b21e8d;
+  line-height: 1.3em; }
 
 ol, ul {
   padding: 0.3em 0 0.3em 0; }
@@ -292,5 +293,12 @@ header {
     padding-top: 13px;
     text-align: center;
     color: #7f2e92; }
+
+.typography-page {
+  margin: 0;
+  padding: 50px 0;
+  background: #fff; }
+  .typography-page h1, .typography-page h2, .typography-page h3, .typography-page h4 {
+    margin: 0.5em 0 0.5em; }
 
 /*# sourceMappingURL=style.css.map */

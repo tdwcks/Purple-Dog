@@ -29,11 +29,10 @@ html {
 }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
   color: $colorOne;
-  display: inline;
+  display: block;
 }
 
 h1 {
@@ -66,6 +65,8 @@ p.large {
 
 .underline {
 	display: inline;
+	border-bottom: 2px solid $colorTwo;
+	line-height: 1.3em;
 }
 
 ol, ul {
