@@ -14,7 +14,6 @@
   max-width: 1280px;
   padding: 0 4%;
   box-sizing: border-box;
-  background: $colorWhite;
 }
 
 %clearfix:after {
@@ -48,6 +47,10 @@ $grid-spacing:4%;
     &:last-child {
         margin-right:0%;
     }
+}
+
+.col-right {
+  float: right;
 }
 
 .spacer {
@@ -88,6 +91,7 @@ $grid-spacing:4%;
 }
 
 .col-5 {
+ position: relative;
  width:(100% / 2.4) - ($grid-spacing * 7 / 12); 
 }
 

@@ -4,3 +4,32 @@
 // 			Digital Experiences
 // 		Links
 // =================================================================
+
+.link-btn-2 {
+	width: intrinsic;
+	background: $colorOne;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	padding: 9px 26px;
+	@include border-radius(10px);
+	cursor: pointer;
+	@include transition(all, 0.2s, ease-in-out);
+
+	&:hover {
+		background: $colorTwo;
+	}
+}
+
+.link-btn-3 {
+	color: $colorOne;
+	display: block;
+
+	&:after {
+		display: block;
+		content: "";
+		width: 70px;
+		height: 5px;
+		background: right;
+	}
+}

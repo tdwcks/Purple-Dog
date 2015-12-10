@@ -5,3 +5,107 @@
 // 		Pages
 // =================================================================
 
+.home-splash {
+	width: 100%;
+	height: 460px;
+	background: $colorOne;
+	position: relative;
+	overflow: hidden;
+
+	h2 {
+		color: #fff;
+	}
+
+	.pd-speech {
+		display: block;
+		margin-top: 100px;
+	}
+}
+
+.home-description {
+	padding: 75px 0;
+}
+
+.course-boxes {
+	height: 295px;
+	width: 100%;
+
+	a.link-course-box {
+		float: left;
+		background: $colorFour;
+		box-sizing: border-box;
+		width: 33.3%;
+		display: block;
+		@include aspect-ratio(8, 6);
+		margin-bottom: 80px;
+
+		&:nth-child(2) .title {
+			background: $colorTwo;
+		}
+	}
+
+	a img {
+		width: 100%;
+	}
+
+	.title {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px 20px;
+		background: $colorOne;
+		position: absolute;
+		bottom: 0;
+
+		h5 {
+			color: #fff;
+		}
+	}
+}
+
+.home-calculator {
+	
+	.calculator-splash {
+		background: $colorThree;
+		width: 100%;
+		height: 285px;
+		position: relative;
+	}
+
+	.col-5 {
+		padding: 42px 0 0 42px;
+
+		h3 {
+			color: #fff;
+		}
+
+		.link-btn-3 {
+			padding-top: 30px;
+		}
+	}
+
+	.col-7 {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.home-testimonials {
+	background: $colorFour;
+	margin-top: 80px;
+	padding: 32px 0;
+
+	.swiper-container {
+		padding: 70px 0;
+	}
+
+	.swiper-container .swiper-wrapper .swiper-slide {
+		width: 50%;
+		display: block;
+
+		h4.underline {
+			text-align: center !important;
+			text-align: center;
+		}
+	}
+}

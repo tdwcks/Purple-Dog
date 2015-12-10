@@ -28,7 +28,7 @@ html {
 	font-family: $base-font-family;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: inherit;
   line-height: 1.2;
   color: $colorOne;
@@ -49,6 +49,10 @@ h3 {
 
 h4 {
 	font-size: 1.25em;
+}
+
+h5 {
+	font-size: 1em;
 }
 
 p {

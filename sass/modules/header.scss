@@ -6,14 +6,110 @@
 // =================================================================
 
 header {
-	height: 65px;
-	width: 100%;
-	position: fixed;
-	z-index: 100;
+	border-top: 4px solid $colorOne;
 
-	p, h4 {
-		padding-top: 13px;
-		text-align: center;
-		color: $colorOne;
+
+	li {
+		list-style-type: none;
+		float: left;
+		margin: 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.cta-nav {
+		clear: both;
+		float: right;
+	}
+
+	.shop-nav {
+		font-size: 0.6em;
+		border: 1px solid #dfdfdf;
+		border-top: 0;
+		width: initial;
+		background: #f7f7f7;
+		border-radius: 0 0 3px 3px;
+		padding: 9px 0;
+		height: auto;
+		overflow: auto;
+		float: right;
+		margin-bottom: 42px;
+
+		li {
+			padding: 0;
+			padding-left: 20px;
+		}
+
+		li:last-child {
+			padding-right: 20px;
+		}
+
+		a {
+			color: $colorType;
+		}
+
+		a:hover {
+			color: $colorOne;
+		}
+	}
+
+	.nav-right {
+		float: right;
+	}
+
+	h5 {
+		padding-right: 45px;
+	}
+
+	nav {
+		margin-top: 50px;
+		width: 100%;
+		border-top: 1px solid #dfdfdf;
+		border-bottom: 1px solid #dfdfdf;
+		padding: 10px 0 0px 0;
+		height: auto;
+		overflow: auto;
+		background: #f7f7f7;
+
+		li {
+			padding: 0 8px 12px 8px;
+			margin: 0 8px;
+
+		}
+
+		a {
+			font-size: 0.75em;	
+			font-weight: $regular;
+			text-align: center;
+
+		}
+
+		.dropdown:after {
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin-left: 10px;
+			background: red; // Change to arrow
+		}
+
+		li:first-child {
+			margin-left: -8px;
+		}
+
+		li.active {
+			border-bottom: 3px solid $colorTwo;
+		}
+
+		li.active a {
+			color: $colorTwo;
+		}
 	}
 }
