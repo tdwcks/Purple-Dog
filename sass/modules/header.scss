@@ -1,0 +1,19 @@
+// 4D 69 6C 6E  4C 74 64
+// =================================================================
+// 		Miln Ltd
+// 			Digital Experiences
+// 		Header
+// =================================================================
+
+header {
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+
+	p, h4 {
+		padding-top: 13px;
+		text-align: center;
+		color: $colorOne;
+	}
+}

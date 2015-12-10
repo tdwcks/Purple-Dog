@@ -1,0 +1,93 @@
+// 4D 69 6C 6E  4C 74 64
+// =================================================================
+// 		Miln Ltd
+// 			Digital Experiences
+// 		Typography
+// =================================================================
+
+
+// 		Weights
+// =================================================================
+	$light:	100;
+	$regular: 400;
+	$bold: 600;
+
+
+// 		Base Font
+// =================================================================
+	$base-font-family: "effra", sans-serif;
+	$base-font-weight: $regular;
+	$base-font-size: 13px;
+	$base-line-height: 1.4;
+
+
+// 		Headings
+// =================================================================
+
+html {
+	font-family: $base-font-family;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: $colorOne;
+  display: inline;
+}
+
+h1 {
+  font-size: 2.441em;
+}
+
+h2 {
+	font-size: 1.953em;
+}
+
+h3 {
+	font-size: 1.563em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+p {
+	color: $colorType;
+	line-height: 1.4em;
+	font-weight: $light;
+	font-size: 1em;
+	padding: 0.4em 0 0.4em 0;
+}
+
+p.large {
+	font-size: 1.25em;
+}
+
+.underline {
+	display: inline;
+}
+
+ol, ul {
+	padding: 0.3em 0 0.3em 0;
+}
+
+li {
+	margin: 0.3em 0 0.3em;
+	font-weight: $light;
+	color: $colorType;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+
+ul li {
+	list-style-type: disc;
+}
+
+span {
+	color: $colorOne;
+}
+
+small, .font_small {font-size: 0.8em;}
