@@ -1,85 +1,99 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset=utf-8 />
-<title>Miln → Layout</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<?php include("includes/global/header.php"); ?>
 
-<script type="text/javascript" src="MyFontsWebfontsKit.js"></script>
+	<section class="pattern-header">
 
+		<div class="grid-container">
 
-</head>
-<body>
+			<div class="row">
 
-	<div id="main" class="m-scene">
+				<h2 class="underline">About</h2>
 
-		<header>
-			<div class="grid-container">
-				<div class="row">
-					<div class="col-3">
-						<div class="grid-spacer"></div>
-					</div>
-					<div class="col-6">
-						<h4></h4>
-					</div>
-					<div class="col-3">
-
-						<nav>
-							<ul>
-								
-							</ul>
-						</nav>
-					</div>
-				</div>
 			</div>
-		</header>
-
-		<div class="scene_element scene_element--fadein">
-
-		<div class="home-feed">
-			<div class="grid-container">
-				<div class="row">
-					<a href="about.php" class="image bg-four"></a>
-				</div>
-				<div class="row">
-					<div class="col-2">
-						<div class="grid-spacer"></div>
-					</div>
-
-					<div class="col-10">
-						<div class="image bg-two"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-10">
-						<div class="image bg-three"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<div class="image bg-four"></div>
-					</div>
-					<div class="col-6">
-						<div class="image bg-five"></div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		</div>
 
-		<footer>
+	</section>
 
-		</footer>
+	<section class="pattern-description">
 
-	</div>
+		<div class="grid-container">
 
-	<script type="text/javascript" src="js/lib/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins/smoothstates.min.js"></script>
-	<script type="text/javascript" src="js/global.js"></script>
-	
+			<div class="row">
 
+				<div class="col-10">
 
-</body>
-</html>
+					<h4 class="underline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="about-person">
+
+		<div class="grid-container">
+
+			<div class="row">
+
+				<div class="col-8">
+
+					<h2>Helen Ashcroft</h2>
+
+					<h5>CEO</h5>
+
+					<p>Co-founder with Steve, Helen keeps Purple Dog perfectly on course, with all office systems, procedures and people working in harmony to support tutors and learners and sustaining the company’s exciting growth. Rated ‘Outstanding’by OFSTED in teaching and learning, Helen’s also regularly back in the training room delivering our great courses to happy learners.</p>
+
+					<ul>
+
+						<li><a class="link-btn-2">Email Helen</a></li>
+						<li><a class="link-facebook"></a></li>
+						<li><a class="link-linkedin"></a></li>
+
+					</ul>
+
+				</div>
+
+				<img src="img/helen.png" alt="Helen Ashcroft"/>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="about-person">
+
+		<div class="grid-container">
+
+			<div class="row">
+
+				<img src="img/steve.png" alt="Steve Moss"/>
+
+				<div class="col-8 col-right">
+
+					<h2>Steve Moss</h2>
+
+					<h5>Managing Director</h5>
+
+					<p>Steve has the daily management of the Purple Dog team and tutors covered! Experienced in and passionate about training, we can’t keep him out of the training room for too long, so Steve also delivers some of our unique and engaging courses. Dedicated and enthusiastic, Steve walks the walk, making sure that Purple Dog continues to build on its great reputation with every hour of training delivered.</p>
+
+					<ul>
+
+						<li><a class="link-btn-2">Email Steve</a></li>
+						<li><a class="link-facebook"></a></li>
+						<li><a class="link-linkedin"></a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+<?php include("includes/global/footer.php"); ?>

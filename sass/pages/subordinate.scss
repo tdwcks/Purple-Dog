@@ -1,0 +1,60 @@
+// 4D 69 6C 6E  4C 74 64
+// =================================================================
+// 		Miln Ltd
+// 			Digital Experiences
+// 		Subordinate
+// =================================================================
+
+.about-person {
+	width: 100%;
+	background: $colorFour;
+	padding-top: 50px;
+	overflow: hidden;
+	position: relative;
+	height: 500px;
+
+	.grid-container {
+		height: 100%;
+	}
+
+	h5 {
+		font-weight: $light;
+		color: $colorType;
+	}
+
+	p {
+		margin-top: 27px;
+	}
+
+	ul {
+		margin-top: 23px;
+		display: block;
+		padding-bottom: 50px;
+	}
+
+	ul li {
+		list-style-type: none;
+		float: left;
+		margin-right: 40px;
+	}
+
+	.col-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	img {
+		width: 30.66667%;
+		position: absolute;
+		bottom: 0;
+	}
+
+	&:nth-child(odd) {
+		background: #fff;
+
+		.col-4 {
+			left: 0;
+		}
+	}
+}

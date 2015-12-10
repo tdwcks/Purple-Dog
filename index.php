@@ -1,64 +1,5 @@
 <?php include("includes/global/header.php"); ?>
 
-
-	<header>
-		
-		<div class="grid-container">
-
-			<div class="row">
-
-				<div class="col-4">
-
-					<a href="/" title="Return to the homepage" class="header-logo">
-					  <!-- Need correct Logo <img src="img/purpledog_logo.svg" alt="Purple Dog Logo" /> -->
-					</a>
-
-				</div>
-
-				<div class="col-right col-6">
-
-					<ul class="shop-nav">
-
-						<li><a href="">First Aid Calculator</a></li>
-						<li><a href="">Login</a></li>
-						<li><a href="">My Account</a></li>
-
-					</ul>
-
-					<ul class="cta-nav">
-						<li><h5>01484 546780</h5></li>
-						<li><a class="link-btn-2">Book Online</a></li>
-					</ul>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<nav>
-
-			<div class="grid-container">
-
-					<ul>
-						<li class="active"><a>Home</a></li>
-						<li><a class="dropdown">About</a></li>
-						<li><a>News</a></li>
-						<li><a class="dropdown">Courses</a></li>
-						<li><a>Contact</a></li>
-					</ul>
-
-					<ul class="nav-right">
-						<li><a class="basket">Basket</a></li>
-						<li><a class="facebook"></a></li>
-						<li><a class="twitter"></a></li>
-					</ul>
-			</div>
-
-		</nav>
-
-	</header>
-
 	<section class="home-splash">
 
 		<div class="grid-container">
@@ -87,7 +28,7 @@
 
 	</section>
 
-	<section class="home-description">
+	<section class="pattern-description">
 
 		<div class="grid-container">
 
@@ -231,8 +172,68 @@
 
 	</section>
 
+	<section class="home-acceditation">
 
+		<div class="grid-container">
 
+			<div class="row">
 
+				<h3>Accreditations</h3>
+
+			</div>
+
+			<div class="row border">
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="home-acceditation">
+
+		<div class="grid-container">
+
+			<div class="row">
+
+				<h3>Who we work with</h3>
+
+			</div>
+
+			<div class="row border">
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+			</div>
+
+			<div class="row border">
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+				<a class="col-3"></a>
+
+			</div>
+
+		</div>
+
+	</section>
 
 <?php include("includes/global/footer.php"); ?>

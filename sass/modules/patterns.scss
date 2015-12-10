@@ -2,26 +2,21 @@
 // =================================================================
 // 		Miln Ltd
 // 			Digital Experiences
-// 		Base
+// 		Patterns
 // =================================================================
 
-html {
-	font-size: 1.625em;
+.pattern-header {
+	width: 100%;
+	background: $colorOne;
+	padding: 90px 0 40px 0;
+
+	h2.underline {
+		color: #fff;
+		border-bottom: 5px solid $colorTwo;
+	}
 }
 
-body {
 
-}
-
-::-moz-selection { 
-	background: $colorTwo; 
-	color: #fff; 
-}
-::selection { 
-	background: $colorTwo; 
-	color: #fff; 
-}
-
-a {
-	cursor: pointer;
+.pattern-description {
+	padding: 75px 0;
 }
