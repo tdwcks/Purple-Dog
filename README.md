@@ -6,7 +6,7 @@ Designed by Aye! Creative built by Miln.
 Links: 
 
 * [Homepage](https://purpledog.herokuapp.com/index.php)
-* [about](https://purpledog.herokuapp.com/about.php) 
+* [About](https://purpledog.herokuapp.com/about.php) 
 * [Why](https://purpledog.herokuapp.com/why.php)
 * [News](https://purpledog.herokuapp.com/news.php)
 * [Courses](https://purpledog.herokuapp.com/courses.php)
