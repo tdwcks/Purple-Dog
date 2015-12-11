@@ -9,11 +9,9 @@ Links:
 * [about](https://purpledog.herokuapp.com/about.php) 
 * [Why](https://purpledog.herokuapp.com/why.php)
 * [News](https://purpledog.herokuapp.com/news.php)
-https://purpledog.herokuapp.com/courses.php - Courses Page
-https://purpledog.herokuapp.com/contact.php - Contact Page
-https://purpledog.herokuapp.com/typography.php - Typography Style Guide
-
-Reminder:
+* [Courses](https://purpledog.herokuapp.com/courses.php)
+* [Contact](https://purpledog.herokuapp.com/contact.php)
+* [Typography](https://purpledog.herokuapp.com/typography.php)
 
 To Do Design: 
 
