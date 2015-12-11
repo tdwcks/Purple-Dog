@@ -37,8 +37,6 @@
 
 </section>
 
-
-
 	<div class="grid-container">
 
 		<div class="pattern-banner">
@@ -73,9 +71,13 @@
 		
 		</div>
 
-
 	</div>
 
+	<section class="why-contact">
 
+		<h2>Let's Talk</h2>
+		<a class="link-btn-2">Contact Us</a>
+
+	</section>
 
 <?php include("includes/global/footer.php"); ?>

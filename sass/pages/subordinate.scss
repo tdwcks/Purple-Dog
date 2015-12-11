@@ -71,3 +71,19 @@
 .news-item:first-child .row {
 	padding-top: 0;
 }
+
+.why-contact {
+	background: $colorFour;
+	margin-top: 30px;
+	padding: 85px 0;
+
+	h2 {
+		text-align: center;
+	}
+
+	a {
+		display: block;
+		margin: 0 auto;
+		margin-top: 35px;
+	}
+}
