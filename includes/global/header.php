@@ -56,7 +56,7 @@
 				<ul>
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="about.php" class="dropdown">About</a></li>
-					<li><a>News</a></li>
+					<li><a href="news.php">News</a></li>
 					<li><a class="dropdown">Courses</a></li>
 					<li><a>Contact</a></li>
 				</ul>

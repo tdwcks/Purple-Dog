@@ -5,6 +5,7 @@
 // 		Patterns
 // =================================================================
 
+
 .pattern-header {
 	width: 100%;
 	background: $colorOne;
@@ -15,6 +16,43 @@
 		border-bottom: 5px solid $colorTwo;
 	}
 }
+
+.pattern-courses {
+	height: auto;
+	width: 100%;
+
+	a.link-course-box {
+		float: left;
+		background: $colorFour;
+		box-sizing: border-box;
+		width: 33.3%;
+		display: block;
+		@include aspect-ratio(8, 6);
+		margin-bottom: 80px;
+
+		&:nth-child(2) .title {
+			background: $colorTwo;
+		}
+	}
+
+	a img {
+		width: 100%;
+	}
+
+	.title {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px 20px;
+		background: $colorOne;
+		position: absolute;
+		bottom: 0;
+
+		h5 {
+			color: #fff;
+		}
+	}
+}
+
 
 
 .pattern-description {

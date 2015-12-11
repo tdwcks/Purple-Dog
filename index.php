@@ -46,7 +46,7 @@
 
 	</section>
 
-	<section class="home-courses">
+	<section class="pattern-courses">
 
 		<div class="grid-container">
 
