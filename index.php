@@ -6,11 +6,11 @@
 
 			<div class="row">
 
-				<div class="col-7">
+				<div class="col-6">
 
-					<div class="pd-speech">
+					<div class="pattern-speech">
 
-						<h2 class="underline">The training from Purple Dog helped me save a 18 month year old girls life.</h2>
+						<h3 class="underline">The training from Purple Dog helped me save a 18 month year old girls life.</h3>
 
 					</div>
 

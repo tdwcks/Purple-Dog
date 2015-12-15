@@ -8,6 +8,11 @@
 header {
 	border-top: 4px solid $colorOne;
 
+	.header-logo {
+		padding-top: 40px;
+		display: block;
+	}
+
 
 	li {
 		list-style-type: none;
@@ -62,6 +67,45 @@ header {
 
 	.nav-right {
 		float: right;
+
+		.facebook {
+			background: url('../img/facebook.svg');
+			background-repeat: no-repeat;
+			display: block;
+			width: 30px;
+			height: 30px;
+			background-size: 100% 100%;
+		}
+
+		.twitter {
+			background: url('../img/twitter.svg');
+			background-repeat: no-repeat;
+			display: block;
+			width: 30px;
+			height: 30px;
+			background-size: 100% 100%;
+		}
+
+		.basket {
+			display: inline-block;
+		}
+
+		.basket:after {
+			content: "";
+			background: url('../img/basket.svg');
+			background-repeat: no-repeat;
+			display: inline-block;
+			width: 30px;
+			height: 19px;
+			vertical-align: -4px;
+			padding-top: 4px;
+			margin: 3px 15px 0 10px;
+			background-size: 100% 100%;
+		}
+
+		li {
+			margin: 0;
+		}
 	}
 
 	h5 {
@@ -69,7 +113,7 @@ header {
 	}
 
 	nav {
-		margin-top: 50px;
+		margin-top: 40px;
 		width: 100%;
 		border-top: 1px solid #dfdfdf;
 		border-bottom: 1px solid #dfdfdf;
@@ -98,7 +142,9 @@ header {
 			width: 10px;
 			height: 10px;
 			margin-left: 10px;
-			background: red; // Change to arrow
+			background: url('../img/nav_trigger.svg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
 		}
 
 		li:first-child {

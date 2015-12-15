@@ -20,10 +20,10 @@
 
 		<div class="row">
 
-			<div class="col-4">
+			<div class="col-5">
 
 				<a href="/" title="Return to the homepage" class="header-logo">
-				  <!-- Need correct Logo <img src="img/purpledog_logo.svg" alt="Purple Dog Logo" /> -->
+				  <img src="img/purpledog_logo.svg" alt="Purple Dog Logo" />
 				</a>
 
 			</div>
