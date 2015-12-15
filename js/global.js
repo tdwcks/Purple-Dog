@@ -5,3 +5,11 @@
 // 		Global Javascript Functions
 // =================================================================
 
+/// This reorders things for smaller screens 
+
+ResponsiveJS.bind('(min-width: 320px) and (max-width: 810px)', 
+    function() {
+
+    	$("header .col-right").insertBefore("#js-logo");
+
+    });

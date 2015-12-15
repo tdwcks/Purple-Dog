@@ -13,12 +13,12 @@ Links:
 * [Contact](https://purpledog.herokuapp.com/contact.php)
 * [Typography](https://purpledog.herokuapp.com/typography.php)
 
+Time  9:12
+
 To Do Design: 
 
-* Design Drop Downs
 * Mapbox custom Marker
 * Mobile Version
-
 
 To Do Front-End Dev: 
 
@@ -28,6 +28,7 @@ To Do Front-End Dev:
 * Courses Page 
 * Add Mapbox
 
-Time  9:12
+Time 1:58
 
+Total Time 11:10
 
