@@ -1,4 +1,5 @@
 # Purple-Dog
+
 Purple Dog Website
 
 Designed by Aye! Creative built by Miln. 
@@ -13,12 +14,15 @@ Links:
 * [Contact](https://purpledog.herokuapp.com/contact.php)
 * [Typography](https://purpledog.herokuapp.com/typography.php)
 
-Time  9:12
+Session #1 Time 9:12
+Session #2 Time 1:58
+
+Total Time 11:10
 
 To Do Design: 
 
 * Mapbox custom Marker
-* Mobile Version
+* Create Mobile icons as SVG
 
 To Do Front-End Dev: 
 
@@ -28,7 +32,7 @@ To Do Front-End Dev:
 * Courses Page 
 * Add Mapbox
 
-Time 1:58
 
-Total Time 11:10
+
+
 

@@ -265,6 +265,16 @@ header {
 				margin-right: 15px;
 			}
 
+			a.telephone:before {
+				content: "";
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: url('../img/nav_trigger_active.svg');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+
 			li a {
 				
 			}
