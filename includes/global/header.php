@@ -63,7 +63,7 @@
 						</ul>
 					</li>
 					<li><a href="news.php">News</a></li>
-					<li class="dropdown"><a href="courses.php">Courses</a>
+					<li class="dropdown"><a>Courses</a>
 						<ul>
 							<li><a href="">What's Here?</a></li>
 							<li><a href="">What is here?</a></li>

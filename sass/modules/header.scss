@@ -315,6 +315,8 @@ header {
 
 				li a.basket:after {
 					width: 21px;
+					right: 0px;
+					position: absolute;
 				}
 			}
 
@@ -437,5 +439,49 @@ header {
 				
 			}
 		}
-	} 
+	}
+
+	@include mq("small", "max-width") {
+
+		.col-6 {
+			width:(100% / 1.333333333333333) - ($grid-spacing * 3 / 12); 
+		}
+
+		.col-right {
+			width: 100%;
+			margin-right: 0;
+		}
+		
+		.mobile-trigger {
+			width: 30px;
+			height: 30px;
+		}
+
+	}
+
+	@include mq("nano", "max-width") {
+
+		.header-logo {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+ 
+		.shop-nav li a {
+			font-size: 0.9em;
+		}
+		
+		.mobile-trigger {
+			margin-top: 35px;
+			width: 30px;
+			height: 30px;
+		}
+
+		.shop-nav li a.telephone:before {
+			margin-right: 8px;
+		}
+
+		.shop-nav li a.email:before {
+			margin-right: 8px;
+		}
+	}
 }

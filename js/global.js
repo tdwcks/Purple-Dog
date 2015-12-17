@@ -17,7 +17,6 @@ ResponsiveJS.bind('(min-width: 320px) and (max-width: 810px)',
     		var ddClicked = $(this).children("ul");
 		  	$(ddClicked).toggleClass('dd-active');
 		  	$(this).toggleClass('dd-active');
-		  	return false;
 		}
 
 		// Mobile Trigger
