@@ -19,8 +19,9 @@ Links:
 * Session #1 Time 9:12
 * Session #2 Time 1:58
 * Session #3 Time 2:04
+* Session #4 Time 2:19
 
-Total Time 13:14
+Total Time 15:33
 
 To Do Design: 
 
