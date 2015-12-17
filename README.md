@@ -14,10 +14,13 @@ Links:
 * [Contact](https://purpledog.herokuapp.com/contact.php)
 * [Typography](https://purpledog.herokuapp.com/typography.php)
 
-Session #1 Time 9:12
-Session #2 Time 1:58
+# Development Sessions
 
-Total Time 11:10
+*Session #1 Time 9:12
+*Session #2 Time 1:58
+*Session #3 Time 2:04
+
+Total Time 13:14
 
 To Do Design: 
 
