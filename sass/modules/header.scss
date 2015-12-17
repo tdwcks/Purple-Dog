@@ -186,6 +186,10 @@ header {
 			display: none;
 		}
 
+		.mobile-trigger {
+			display: none;
+		}
+
 		// DropDown specfic styling 
 
 		ul li ul {
@@ -238,6 +242,15 @@ header {
 			display: none;
 		}
 
+		.header-logo {
+			margin-left: 15px;
+			padding-bottom: 40px;
+		}
+
+		.col-6 {
+			width:(100% / 1.5) - ($grid-spacing * 4 / 12); 
+		}
+
 		.grid-container {
 			padding: 0;
 		}
@@ -245,6 +258,139 @@ header {
 		.col-right {
 			width: 100%;
 			margin-right: 0;
+		}
+
+		.mobile-trigger {
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+			background: url('../img/burger.svg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			float: right;
+			margin-top: 55px;
+			margin-right: 15px;
+			display: block;
+		}
+
+		nav.menu-active {
+			display: block;
+		}
+
+		nav {
+			height: auto;
+			overflow: auto;
+			display: none;
+			border-top: 0;
+			padding: 0;
+			margin-top: 0;
+			background: $colorFour;
+
+			li {
+				margin: 0;
+				padding: 0;
+				display: block;
+			}
+
+			.nav-right {
+				width: 100%;
+
+				li {
+					width: 100%;
+					float: left;
+					clear: none;
+					display: inline-block;
+				}
+
+				li a {
+					width: 100%;
+					display: block;
+					padding: 11px 15px 13px 15px;
+					border-bottom: 1px solid #dfdfdf;
+				}
+
+				li a.facebook, li a.twitter {
+					display: none;
+				}
+
+				li a.basket:after {
+					width: 21px;
+				}
+			}
+
+			.dropdown a:after {
+				position: absolute;
+				@include transition(all, 0.2s, ease-in-out);
+				@include transform(rotate(180deg));
+				right: 15px;
+				width: 15px;
+				top: 23px;
+			}
+
+			li a {
+				border-top: 1px solid #dfdfdf;
+				width: 100%;
+				padding: 15px;
+				display: block;
+				text-align: left;
+			}
+
+			li:first-child {
+				margin-left: 0;
+			}
+
+			li.active, li:hover {
+				border-bottom: 0;
+			}
+
+			li.active a, li:hover a {
+				color: $colorType;
+			}
+
+			li.active a, li:hover a {
+				color: $colorType;
+			}
+
+			.dropdown.active a:after, .dropdown:hover a:after {
+				background: url('../img/nav_trigger.svg');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+
+			ul li {
+				clear: both;
+				width: 100%;
+			}
+
+			ul li ul {
+				display: block;
+				top: 0;
+				width: 100%;
+				opacity: 1;
+				position: relative;
+				background: none;
+				display: none;
+			}
+
+			ul li ul.dd-active {
+				display: block;
+			}
+
+			.dd-active.dropdown a:after {
+				@include transform(rotate(0deg));
+			}
+
+			ul li ul li {
+				font-size: 1em;
+				width: 100%;
+				padding: 0;
+				padding: 0px;
+			}
+
+			ul li ul li a {
+				border-top: 1px solid #dfdfdf;
+				width: 100%;
+			}
 		}
 
 		.shop-nav {
@@ -267,9 +413,21 @@ header {
 
 			a.telephone:before {
 				content: "";
-				display: block;
-				width: 30px;
-				height: 30px;
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin-right: 12px;
+				background: url('../img/nav_trigger_active.svg');
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+
+			a.email:before {
+				content: "";
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin-right: 12px;
 				background: url('../img/nav_trigger_active.svg');
 				background-repeat: no-repeat;
 				background-size: 100% 100%;

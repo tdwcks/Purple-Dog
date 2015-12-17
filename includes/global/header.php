@@ -26,6 +26,8 @@
 
 			</div>
 
+			<div class="mobile-trigger"></div>
+
 			<div class="col-right col-6">
 
 				<ul class="shop-nav">
@@ -54,10 +56,10 @@
 
 				<ul>
 					<li class="active"><a href="index.php">Home</a></li>
-					<li class="dropdown"><a href="">About</a>
+					<li class="dropdown"><a>About</a>
 						<ul>
-							<li><a href="">About</a></li>
-							<li><a href="">Why Purple Dog?</a></li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="why.php">Why Purple Dog?</a></li>
 						</ul>
 					</li>
 					<li><a href="news.php">News</a></li>
