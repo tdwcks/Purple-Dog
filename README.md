@@ -16,9 +16,9 @@ Links:
 
 # Development Sessions
 
-*Session #1 Time 9:12
-*Session #2 Time 1:58
-*Session #3 Time 2:04
+* Session #1 Time 9:12
+* Session #2 Time 1:58
+* Session #3 Time 2:04
 
 Total Time 13:14
 
