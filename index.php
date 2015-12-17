@@ -6,7 +6,7 @@
 
 			<div class="row">
 
-				<div class="col-6">
+				<div class="splash-speech">
 
 					<div class="pattern-speech">
 
@@ -14,9 +14,11 @@
 
 					</div>
 
+					<a class="link-btn-2">Book Now</a>
+
 				</div>
 
-				<div class="col-5 col-right">
+				<div class="splash-image">
 
 					<img src="img/banner_mother.png" alt="Mother and Daughter" />
 
@@ -62,7 +64,7 @@
 
 					<a class="link-course-box">
 
-						<img src="" alt=""/>
+						<img src="img/first_aid.jpg" alt=""/>
 
 						<div class="title">
 
@@ -74,11 +76,11 @@
 
 					<a class="link-course-box">
 
-						<img src="" alt=""/>
+						<img src="img/health_safety.jpg" alt=""/>
 
 						<div class="title">
 
-							<h5>First Aid</h5>
+							<h5>Health &amp; Safety</h5>
 
 						</div>
 
@@ -86,11 +88,11 @@
 
 					<a class="link-course-box">
 
-						<img src="" alt=""/>
+						<img src="img/food_safety.jpg" alt=""/>
 
 						<div class="title">
 
-							<h5>First Aid</h5>
+							<h5>Food Safety</h5>
 
 						</div>
 

@@ -581,19 +581,19 @@ header {
       header .shop-nav a.telephone:before {
         content: "";
         display: inline-block;
-        width: 10px;
+        width: 15px;
         height: 10px;
         margin-right: 12px;
-        background: url("../img/nav_trigger_active.svg");
+        background: url("../img/phone_icon_mobile.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%; }
       header .shop-nav a.email:before {
         content: "";
         display: inline-block;
-        width: 10px;
+        width: 15px;
         height: 10px;
         margin-right: 12px;
-        background: url("../img/nav_trigger_active.svg");
+        background: url("../img/email_icon_mobile.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%; } }
   @media (max-width: 650px) {
@@ -605,7 +605,7 @@ header {
     header .mobile-trigger {
       width: 30px;
       height: 30px; } }
-  @media (max-width: 520px) {
+  @media (max-width: 330px) {
     header .header-logo {
       padding-top: 30px;
       padding-bottom: 30px; }
@@ -616,9 +616,9 @@ header {
       width: 30px;
       height: 30px; }
     header .shop-nav li a.telephone:before {
-      margin-right: 8px; }
+      margin-right: 3px; }
     header .shop-nav li a.email:before {
-      margin-right: 8px; } }
+      margin-right: 3px; } }
 
 .link-btn-2 {
   width: intrinsic;
@@ -1126,14 +1126,17 @@ button.swiper-pagination-bullet {
     background: #f7f7f7;
     box-sizing: border-box;
     width: 33.3%;
+    position: relative;
     display: block;
     position: relative;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    overflow: hidden;
+    box-sizing: border-box; }
     .pattern-courses a.link-course-box:before {
       display: block;
       content: "";
       width: 100%;
-      padding-top: 75%; }
+      padding-top: 68.75%; }
     .pattern-courses a.link-course-box > .content {
       position: absolute;
       top: 0;
@@ -1141,18 +1144,68 @@ button.swiper-pagination-bullet {
       right: 0;
       bottom: 0; }
     .pattern-courses a.link-course-box:nth-child(2) .title {
-      background: #b21e8d; }
+      background: rgba(178, 30, 141, 0.9); }
   .pattern-courses a img {
-    width: 100%; }
+    position: absolute;
+    width: 100%;
+    top: 0; }
   .pattern-courses .title {
     box-sizing: border-box;
     width: 100%;
     padding: 15px 20px;
-    background: #7f2e92;
+    background: rgba(127, 46, 146, 0.8);
     position: absolute;
     bottom: 0; }
     .pattern-courses .title h5 {
       color: #fff; }
+    .pattern-courses .title h5:after {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 10px;
+      margin-top: 10px;
+      float: right;
+      background: url("../img/arrow_white.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+  @media (max-width: 812px) {
+    .pattern-courses {
+      padding: 0 10px;
+      box-sizing: border-box; }
+      .pattern-courses h3 {
+        font-size: 1.25em; }
+      .pattern-courses a.link-course-box {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px; }
+        .pattern-courses a.link-course-box:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 56.25%; }
+        .pattern-courses a.link-course-box > .content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; } }
+  @media (max-width: 650px) {
+    .pattern-courses h3 {
+      font-size: 1.1em; }
+    .pattern-courses a.link-course-box {
+      position: relative;
+      margin-bottom: 20px; }
+      .pattern-courses a.link-course-box:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 62.5%; }
+      .pattern-courses a.link-course-box > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; } }
 
 .pattern-steps {
   padding: 75px 0 25px 0; }
@@ -1161,6 +1214,20 @@ button.swiper-pagination-bullet {
   padding: 75px 0; }
   .pattern-description .padding {
     padding-top: 40px; }
+  @media (max-width: 812px) {
+    .pattern-description {
+      padding: 40px 10px; }
+      .pattern-description h4 {
+        font-size: 1em; } }
+  @media (max-width: 650px) {
+    .pattern-description {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      padding-left: 10px; }
+      .pattern-description .col-10 {
+        width: 100%; }
+      .pattern-description h4 {
+        font-size: 0.8em; } }
 
 .pattern-banner {
   width: 100%;
@@ -1191,14 +1258,75 @@ button.swiper-pagination-bullet {
   position: relative;
   overflow: hidden; }
   .home-splash h3 {
-    color: #fff; }
+    color: #fff;
+    padding: 0;
+    margin: 0; }
+  .home-splash .splash-speech {
+    float: left;
+    width: 560px; }
+  .home-splash .splash-image {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 0; }
   .home-splash .pattern-speech {
     display: block;
-    margin-top: 100px;
+    margin-top: 50px;
+    background: url("../img/speech_bubble.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    height: 250px; }
+    height: 300px;
+    padding: 60px 60px;
+    box-sizing: border-box;
+    background-position: 0px 5px; }
+  .home-splash .link-btn-2 {
+    background: #b21e8d;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 40px; }
+  @media (max-width: 812px) {
+    .home-splash {
+      height: 350px; }
+      .home-splash .splash-speech {
+        width: 410px; }
+      .home-splash .pattern-speech {
+        margin-top: 30px;
+        padding: 38px 0px 0px 28px;
+        height: 225px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        background-position: 0px 0px; }
+      .home-splash h3 {
+        padding: 0;
+        font-size: 1.25em; } }
+  @media (max-width: 650px) {
+    .home-splash {
+      height: 230px; }
+      .home-splash .splash-speech {
+        width: 235px; }
+      .home-splash .splash-image {
+        width: 48%;
+        right: -11%;
+        top: 50px; }
+      .home-splash .pattern-speech {
+        margin-top: 20px;
+        padding: 26px 0px 0px 22px;
+        height: 150px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        background-position: 0px 0px;
+        margin-left: 10px; }
+      .home-splash .link-btn-2 {
+        padding: 8px 15px;
+        font-size: 0.6em; }
+      .home-splash h3 {
+        padding: 0;
+        font-size: 0.7em;
+        line-height: 1.1em; } }
+  @media (max-width: 330px) {
+    .home-splash .splash-image {
+      top: 90px; } }
 
 .home-calculator .calculator-splash {
   background: #9bbb59;

@@ -35,35 +35,82 @@
 	height: auto;
 	width: 100%;
 
+
 	a.link-course-box {
 		float: left;
 		background: $colorFour;
 		box-sizing: border-box;
 		width: 33.3%;
+		position: relative;
 		display: block;
-		@include aspect-ratio(8, 6);
+		@include aspect-ratio(16, 11);
 		margin-bottom: 80px;
+		overflow: hidden;
+		box-sizing: border-box;
 
 		&:nth-child(2) .title {
-			background: $colorTwo;
+			background: rgba(178, 30, 141, 0.9);
 		}
 	}
 
 	a img {
+		position: absolute;
 		width: 100%;
+		top: 0;
 	}
 
 	.title {
 		box-sizing: border-box;
 		width: 100%;
 		padding: 15px 20px;
-		background: $colorOne;
+		background: rgba(127, 46, 146, 0.8);
 		position: absolute;
 		bottom: 0;
 
 		h5 {
 			color: #fff;
 		}
+
+		h5:after {
+			content: "";
+			display: inline-block;
+			width: 40px;
+			height: 10px;
+			margin-top: 10px;
+			float: right;
+			background: url('../img/arrow_white.svg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	@include mq("medium", "max-width") {
+		padding: 0 10px;
+		box-sizing: border-box;
+
+		h3 {
+			font-size: 1.25em;
+		}
+
+		a.link-course-box {
+			@include aspect-ratio(16, 9);
+			width: 100%;
+			margin-bottom: 40px;
+		}
+
+	}
+
+	@include mq("small", "max-width") {
+
+		h3 {
+			font-size: 1.1em;
+		}
+
+		a.link-course-box {
+			@include aspect-ratio(16, 10);
+			margin-bottom: 20px;
+		}
+
 	}
 }
 
@@ -77,6 +124,29 @@
 	.padding {
 		padding-top: 40px;
 	}
+
+	@include mq("medium", "max-width") {
+		padding: 40px 10px;
+
+		h4 {
+			font-size: 1em;
+		}
+
+	}
+
+	@include mq("small", "max-width") {
+		padding-top: 20px;
+		padding-bottom: 30px;
+		padding-left: 10px;
+
+		.col-10 {
+			width: 100%;
+		}
+
+		h4 {
+			font-size: 0.8em;
+		}
+	}	
 }
 
 .pattern-banner {
@@ -108,8 +178,5 @@
 	}
 }
 
-.pattern-speech {
-	
-}
 
 

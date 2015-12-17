@@ -416,10 +416,10 @@ header {
 			a.telephone:before {
 				content: "";
 				display: inline-block;
-				width: 10px;
+				width: 15px;
 				height: 10px;
 				margin-right: 12px;
-				background: url('../img/nav_trigger_active.svg');
+				background: url('../img/phone_icon_mobile.svg');
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
 			}
@@ -427,10 +427,10 @@ header {
 			a.email:before {
 				content: "";
 				display: inline-block;
-				width: 10px;
+				width: 15px;
 				height: 10px;
 				margin-right: 12px;
-				background: url('../img/nav_trigger_active.svg');
+				background: url('../img/email_icon_mobile.svg');
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
 			}
@@ -477,11 +477,11 @@ header {
 		}
 
 		.shop-nav li a.telephone:before {
-			margin-right: 8px;
+			margin-right: 3px;
 		}
 
 		.shop-nav li a.email:before {
-			margin-right: 8px;
+			margin-right: 3px;
 		}
 	}
 }
