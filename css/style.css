@@ -645,11 +645,15 @@ header {
   color: #7f2e92;
   display: block; }
   .link-btn-3:after {
-    display: block;
+    display: inline-block;
     content: "";
-    width: 70px;
-    height: 5px;
-    background: right; }
+    width: 30px;
+    margin-left: 15px;
+    height: 20px;
+    background-image: url("../img/purple_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 2px; }
 
 .swiper-container {
   margin: 0 auto;

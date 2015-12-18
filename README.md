@@ -26,7 +26,7 @@ Total Time 15:33
 To Do Design: 
 
 * Mapbox custom Marker
-* Create Mobile icons as SVG
+* Purple Arrow as SVG
 
 To Do Front-End Dev: 
 
