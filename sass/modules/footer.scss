@@ -11,9 +11,14 @@ footer {
 	background: $colorOne;
 
 	h5, p, a {
-		font-size: 0.8em;
+		font-size: 0.7em;
 		color: #fff;
 		font-weight: $light;
+	}
+
+	h5 {
+		font-weight: $regular;
+		padding-bottom: 10px;
 	}
 
 	a {
@@ -25,5 +30,143 @@ footer {
 		height: 52px;
 		width: 100%;
 		background: #0c0c0c;
+
+		.col-6 {
+			display: block;
+			margin: 0 auto;
+			float: none;
+			height: 10px;
+			margin-top: 15px;
+
+		}
+
+		ul li {
+			display: block;
+			list-style-type: none;
+			font-size: 0.55em;
+			float: left;
+			padding-top: 8px;
+			width: 33.3%;
+		}
+
+		ul li.right {
+			float: right;
+		}
+
+		ul li.center {
+			padding-top: 2px;
+		}
+
+		img {
+			margin: 0 auto;
+			display: block;
+		}
+
+		a {
+			text-decoration: none;
+			text-align: center;
+			width: 100%;
+			display: block;
+		}
+
+		a.js-link-to-top {
+			position: relative;
+			max-width: 24px;
+			display: block;
+			margin-left: 50%;
+			@include transform(translatex(-12px));
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.footer-gateway {
+
+		li {
+			list-style-type: none;
+			margin-right: 20px;
+			width: 50px;
+			height: 30px;
+			float: left;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+
+		}
+
+		.visa {
+			background-image: url('../img/visa_logo.svg');
+		}
+
+		.mastercard {
+			background-image: url('../img/mastercard_logo.svg');
+		}
+
+		.paypal {
+			padding-top: 5px;
+			background-image: url('../img/paypal_logo.svg');
+		}
+
+	}
+
+	img {
+		width: 60%;
+		float: right;
+	}
+
+	@include mq("medium", "max-width") {
+
+		.col-4 {
+			padding-left: 10px;
+			width: 45%;
+			float: left;
+		}
+
+		.footer-bottom {
+			.col-6 {
+				width: 60%;
+			}
+		}
+
+		.col-2 {
+			display: none;
+		}
+	}
+
+	@include mq("small", "max-width") {
+		padding-top: 25px;
+
+		.col-4 {
+			width: 100%;
+			padding-top: 25px;
+		}
+
+		img {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			width: 75px;
+		}
+		
+		.col-2 {
+			display: block;
+			padding-left: 10px;
+			padding-top: 25px;
+			width: 100%;
+		}
+
+		.footer-bottom {
+			.col-6 {
+				width: 98%;
+			}
+		}
+	}
+
+	@include mq("nano", "max-width") {
+		
+		ul li a {
+			font-size: 0.7em;
+		}
 	}
 }

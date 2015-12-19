@@ -274,9 +274,12 @@ footer {
   padding: 50px 0 0 0;
   background: #7f2e92; }
   footer h5, footer p, footer a {
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: #fff;
     font-weight: 100; }
+  footer h5 {
+    font-weight: 400;
+    padding-bottom: 10px; }
   footer a {
     font-size: 1em; }
   footer .footer-bottom {
@@ -284,6 +287,91 @@ footer {
     height: 52px;
     width: 100%;
     background: #0c0c0c; }
+    footer .footer-bottom .col-6 {
+      display: block;
+      margin: 0 auto;
+      float: none;
+      height: 10px;
+      margin-top: 15px; }
+    footer .footer-bottom ul li {
+      display: block;
+      list-style-type: none;
+      font-size: 0.55em;
+      float: left;
+      padding-top: 8px;
+      width: 33.3%; }
+    footer .footer-bottom ul li.right {
+      float: right; }
+    footer .footer-bottom ul li.center {
+      padding-top: 2px; }
+    footer .footer-bottom img {
+      margin: 0 auto;
+      display: block; }
+    footer .footer-bottom a {
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      display: block; }
+    footer .footer-bottom a.js-link-to-top {
+      position: relative;
+      max-width: 24px;
+      display: block;
+      margin-left: 50%;
+      -webkit-transform: translatex(-12px);
+      -moz-transform: translatex(-12px);
+      -ms-transform: translatex(-12px);
+      -o-transform: translatex(-12px);
+      transform: translatex(-12px); }
+      footer .footer-bottom a.js-link-to-top img {
+        width: 100%; }
+  footer .footer-gateway li {
+    list-style-type: none;
+    margin-right: 20px;
+    width: 50px;
+    height: 30px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  footer .footer-gateway .visa {
+    background-image: url("../img/visa_logo.svg"); }
+  footer .footer-gateway .mastercard {
+    background-image: url("../img/mastercard_logo.svg"); }
+  footer .footer-gateway .paypal {
+    padding-top: 5px;
+    background-image: url("../img/paypal_logo.svg"); }
+  footer img {
+    width: 60%;
+    float: right; }
+  @media (max-width: 812px) {
+    footer .col-4 {
+      padding-left: 10px;
+      width: 45%;
+      float: left; }
+    footer .footer-bottom .col-6 {
+      width: 60%; }
+    footer .col-2 {
+      display: none; } }
+  @media (max-width: 650px) {
+    footer {
+      padding-top: 25px; }
+      footer .col-4 {
+        width: 100%;
+        padding-top: 25px; }
+      footer img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 75px; }
+      footer .col-2 {
+        display: block;
+        padding-left: 10px;
+        padding-top: 25px;
+        width: 100%; }
+      footer .footer-bottom .col-6 {
+        width: 98%; } }
+  @media (max-width: 330px) {
+    footer ul li a {
+      font-size: 0.7em; } }
 
 header {
   border-top: 4px solid #7f2e92; }
@@ -1371,7 +1459,7 @@ button.swiper-pagination-bullet {
     .home-calculator .calculator-splash {
       box-sizing: border-box;
       margin-top: 15px;
-      padding: 10px 20px;
+      padding: 0px 0px 40px 0px;
       overflow: auto;
       height: auto; }
     .home-calculator img {
@@ -1428,13 +1516,18 @@ button.swiper-pagination-bullet {
   .home-testimonials .swiper-container .swiper-wrapper .swiper-slide-active h4 {
     opacity: 1; }
   @media (max-width: 812px) {
-    .home-testimonials .swiper-container {
-      padding: 10px 0; }
-    .home-testimonials .swiper-container .swiper-wrapper .swiper-slide {
-      width: 600px;
-      height: 280px; }
-    .home-testimonials .swiper-button-prev, .home-testimonials .swiper-button-next {
-      display: none; } }
+    .home-testimonials {
+      margin-top: 40px; }
+      .home-testimonials h3 {
+        padding-left: 10px;
+        font-size: 1.25em; }
+      .home-testimonials .swiper-container {
+        padding: 10px 0; }
+      .home-testimonials .swiper-container .swiper-wrapper .swiper-slide {
+        width: 600px;
+        height: 280px; }
+      .home-testimonials .swiper-button-prev, .home-testimonials .swiper-button-next {
+        display: none; } }
   @media (max-width: 650px) {
     .home-testimonials {
       margin-top: 30px; }

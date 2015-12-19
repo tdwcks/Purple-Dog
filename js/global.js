@@ -8,23 +8,36 @@
 /// This reorders things for smaller screens 
 
 ResponsiveJS.bind('(min-width: 320px) and (max-width: 810px)', 
-    function() {
+   function() {
 
-    	$("header .col-right").insertBefore("#js-logo");
-    	$( "header .dropdown").on( "click", dropdown );
-    	
-    	function dropdown() {
-    		var ddClicked = $(this).children("ul");
-		  	$(ddClicked).toggleClass('dd-active');
-		  	$(this).toggleClass('dd-active');
-		}
+	$("header .col-right").insertBefore("#js-logo");
+	$( "header .dropdown").on( "click", dropdown );
+	
+	function dropdown() {
+		var ddClicked = $(this).children("ul");
+	  	$(ddClicked).toggleClass('dd-active');
+	  	$(this).toggleClass('dd-active');
+	}
 
-		// Mobile Trigger
+	// Mobile Trigger
 
-		$( "header .mobile-trigger").on( "click", menuTrigger);
+	$( "header .mobile-trigger").on( "click", menuTrigger);
 
-		function menuTrigger() {
-			$('nav').toggleClass('menu-active');
-		}
+	function menuTrigger() {
+		$('nav').toggleClass('menu-active');
+	}
 
-    });
+});
+
+$(function(){ 
+
+	$(".js-link-to-top").on( "click", scrollTop);
+
+	function scrollTop() {
+		$("html, body").animate({
+            scrollTop: 0
+        }, 600);
+		return false;
+	}
+
+});
