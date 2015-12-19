@@ -44,8 +44,6 @@
 
 			<div class="row">
 
-				
-
 			</div>
 
 		</div>
@@ -63,7 +61,7 @@
         prevButton: '.swiper-button-prev',
         slidesPerView: 'auto',
     	centeredSlides: true,
-		spaceBetween: 0
+		spaceBetween: 100
     });
 </script>
 

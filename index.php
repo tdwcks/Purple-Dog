@@ -120,7 +120,7 @@
 
 				<div class="calculator-splash">
 
-					<div class="col-5">
+					<div class="col-6">
 
 						<h3>Find out how many First Aiders you need with our First Aid calculator</h3>
 
@@ -128,11 +128,7 @@
 					
 					</div>
 
-					<div class="col-7">
-
-						<img src="img/calculator.png" alt=""/>
-
-					</div>
+					<img src="img/calculator.png" alt=""/>
 
 				</div>
 
@@ -152,13 +148,21 @@
 
 			</div>
 
+		</div>
+
 			<div class="swiper-container">
 
 	        <div class="swiper-wrapper">
 	            
 	            <div class="swiper-slide">
 
-	            	<h4 class="underline">The tutor was engaging, funny, intelligent and everything was interesting. I wasn’t bored even for a second!</h4>
+	            	<h4>The tutor was engaging, funny, intelligent and everything was interesting.</h4>
+
+	            </div>
+
+	            <div class="swiper-slide">
+
+	            	<h4>The tutor was engaging, funny, intelligent and everything was interesting.</h4>
 
 	            </div>
 
@@ -170,11 +174,9 @@
 	    </div>
 			
 
-		</div>
-
 	</section>
 
-	<section class="home-acceditation">
+	<section class="home-accreditation">
 
 		<div class="grid-container">
 
@@ -200,7 +202,7 @@
 
 	</section>
 
-	<section class="home-acceditation">
+	<section class="home-accreditation">
 
 		<div class="grid-container">
 

@@ -1106,6 +1106,22 @@ button.swiper-pagination-bullet {
 @keyframes swiper-preloader-spin {
   100% {
     transform: rotate(360deg); } }
+.swiper-button-prev, .swiper-button-next {
+  width: 45px;
+  height: 45px;
+  display: block;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.swiper-button-next {
+  background-image: url("../img/slider_right.svg");
+  right: 30px; }
+
+.swiper-button-prev {
+  background-image: url("../img/slider_left.svg");
+  left: 30px; }
+
 .pattern-header {
   width: 100%;
   background: #7f2e92;
@@ -1337,16 +1353,46 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 285px;
   position: relative; }
-.home-calculator .col-5 {
+.home-calculator .col-6 {
   padding: 42px 0 0 42px; }
-  .home-calculator .col-5 h3 {
+  .home-calculator .col-6 h3 {
     color: #fff; }
-  .home-calculator .col-5 .link-btn-3 {
+  .home-calculator .col-6 .link-btn-3 {
     padding-top: 30px; }
-.home-calculator .col-7 {
+.home-calculator img {
+  width: 50%;
   position: absolute;
   top: 0;
   right: 0; }
+@media (max-width: 812px) {
+  .home-calculator {
+    margin-left: 10px;
+    margin-right: 10px; }
+    .home-calculator .calculator-splash {
+      box-sizing: border-box;
+      margin-top: 15px;
+      padding: 10px 20px;
+      overflow: auto;
+      height: auto; }
+    .home-calculator img {
+      display: none; }
+    .home-calculator h3 {
+      font-size: 1.25em; }
+    .home-calculator .col-6 {
+      width: 75%; } }
+@media (max-width: 650px) {
+  .home-calculator {
+    box-sizing: border-box; }
+    .home-calculator .calculator-splash {
+      padding: 30px; }
+    .home-calculator .col-6 {
+      padding: 0;
+      width: 100%; }
+    .home-calculator h3 {
+      font-size: 1.1em; } }
+@media (max-width: 330px) {
+  .home-calculator h3 {
+    font-size: 1em; } }
 
 .home-testimonials {
   background: #f7f7f7;
@@ -1355,11 +1401,60 @@ button.swiper-pagination-bullet {
   .home-testimonials .swiper-container {
     padding: 70px 0; }
   .home-testimonials .swiper-container .swiper-wrapper .swiper-slide {
-    width: 50%;
-    display: block; }
-    .home-testimonials .swiper-container .swiper-wrapper .swiper-slide h4.underline {
-      text-align: center !important;
-      text-align: center; }
+    width: 775px;
+    display: block;
+    background: url("../img/speech_bubble_purple.svg");
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 25px;
+    padding: 40px 50px;
+    height: 350px;
+    display: table;
+    text-align: center; }
+    .home-testimonials .swiper-container .swiper-wrapper .swiper-slide h4 {
+      margin-top: 0;
+      padding: 0;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      display: table-cell;
+      opacity: 0;
+      line-height: 1.2em;
+      vertical-align: middle; }
+  .home-testimonials .swiper-container .swiper-wrapper .swiper-slide-active h4 {
+    opacity: 1; }
+  @media (max-width: 812px) {
+    .home-testimonials .swiper-container {
+      padding: 10px 0; }
+    .home-testimonials .swiper-container .swiper-wrapper .swiper-slide {
+      width: 600px;
+      height: 280px; }
+    .home-testimonials .swiper-button-prev, .home-testimonials .swiper-button-next {
+      display: none; } }
+  @media (max-width: 650px) {
+    .home-testimonials {
+      margin-top: 30px; }
+      .home-testimonials h3 {
+        padding-left: 10px;
+        font-size: 1.1em; }
+      .home-testimonials .swiper-container .swiper-wrapper .swiper-slide {
+        width: 350px;
+        height: 175px; }
+      .home-testimonials h4 {
+        font-size: 0.8em; } }
+  @media (max-width: 330px) {
+    .home-testimonials .swiper-container .swiper-wrapper .swiper-slide {
+      width: 300px;
+      height: 150px;
+      padding: 20px;
+      padding-top: 30px; } }
+
+.home-accreditation {
+  display: none; }
 
 .about-person {
   width: 100%;

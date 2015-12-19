@@ -469,3 +469,22 @@ button.swiper-pagination-bullet {
 //    Custom Styles
 // =================================================================
 
+.swiper-button-prev, .swiper-button-next {
+   width: 45px;
+    height: 45px;
+    display: block;
+    cursor: pointer;
+     background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.swiper-button-next {
+    background-image: url('../img/slider_right.svg');
+    right: 30px;
+}
+
+.swiper-button-prev {
+    background-image: url('../img/slider_left.svg');
+    left: 30px;
+}
+

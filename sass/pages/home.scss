@@ -126,7 +126,7 @@
 		position: relative;
 	}
 
-	.col-5 {
+	.col-6 {
 		padding: 42px 0 0 42px;
 
 		h3 {
@@ -138,10 +138,60 @@
 		}
 	}
 
-	.col-7 {
+	img {
+		width: 50%;
 		position: absolute;
 		top: 0;
 		right: 0;
+	}
+
+	@include mq("medium", "max-width") {
+		margin-left: 10px;
+
+		margin-right: 10px;
+
+		.calculator-splash {
+			box-sizing: border-box;
+			margin-top: 15px;
+			padding: 10px 20px;
+			overflow: auto;
+			height: auto;
+		}
+
+		img {
+			display: none;
+		}
+
+		h3 {
+			font-size: 1.25em;
+		}
+
+		.col-6 {
+			width: 75%;
+		}
+	}
+
+	@include mq("small", "max-width") {
+		box-sizing: border-box;
+
+		.calculator-splash {
+			padding: 30px;
+		}
+
+		.col-6 {
+			padding: 0;
+			width: 100%;
+		}
+
+		h3 {
+			font-size: 1.1em;
+		}
+	}
+
+	@include mq("nano", "max-width") {
+		h3 {
+			font-size: 1em;
+		}
 	}
 }
 
@@ -155,12 +205,79 @@
 	}
 
 	.swiper-container .swiper-wrapper .swiper-slide {
-		width: 50%;
+		width: 775px;
 		display: block;
+		background: url('../img/speech_bubble_purple.svg');
+		display: block;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 0px 25px;
+		padding: 40px 50px;
+		height: 350px;
+		display: table;
+    	text-align: center;
 
-		h4.underline {
-			text-align: center !important;
-			text-align: center;
+
+		h4 {
+			margin-top: 0;
+			padding: 0;
+			@include transition(all, 0.5s, ease-in-out);
+			display: table-cell;
+			opacity: 0;
+			line-height: 1.2em;
+    		vertical-align: middle;
 		}
 	}
+
+	.swiper-container .swiper-wrapper .swiper-slide-active h4 {
+		opacity: 1;
+	}
+
+	@include mq("medium", "max-width") {
+
+		.swiper-container {
+			padding: 10px 0;
+		}
+
+		.swiper-container .swiper-wrapper .swiper-slide {
+			width: 600px;
+			height: 280px;
+		}
+
+		.swiper-button-prev, .swiper-button-next {
+			display: none;
+		}
+	}
+
+	@include mq("small", "max-width") {
+		margin-top: 30px;
+
+		h3 {
+			padding-left: 10px;
+			font-size: 1.1em;
+		}
+
+		.swiper-container .swiper-wrapper .swiper-slide {
+			width: 350px;
+			height: 175px;
+		}
+
+		h4 {
+			font-size: 0.8em;
+		}
+	}
+
+	@include mq("nano", "max-width") {
+		.swiper-container .swiper-wrapper .swiper-slide {
+			width: 300px;
+			height: 150px;
+			padding: 20px;
+			padding-top: 30px;
+		}
+	}
+}
+
+.home-accreditation {
+	display: none;
 }
