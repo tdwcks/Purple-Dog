@@ -27,6 +27,7 @@ To Do Design:
 
 * Mapbox custom Marker
 * Purple Arrow as SVG
+* Resize Aarron + iain to be as tall as Helen + Steve
 
 To Do Front-End Dev: 
 

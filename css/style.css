@@ -728,6 +728,9 @@ header {
   transition: all 0.2s ease-in-out; }
   .link-btn-2:hover {
     background: #b21e8d; }
+  @media (max-width: 650px) {
+    .link-btn-2 {
+      padding: 7px 15px; } }
 
 .link-btn-3 {
   color: #7f2e92;
@@ -742,6 +745,30 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 0 2px; }
+
+.link-facebook {
+  display: block;
+  background-image: url("../img/linkedin.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 35px;
+  height: 35px; }
+  @media (max-width: 650px) {
+    .link-facebook {
+      width: 25px;
+      height: 25px; } }
+
+.link-linkedin {
+  display: block;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 35px;
+  height: 35px; }
+  @media (max-width: 650px) {
+    .link-linkedin {
+      width: 25px;
+      height: 25px; } }
 
 .swiper-container {
   margin: 0 auto;
@@ -1213,10 +1240,25 @@ button.swiper-pagination-bullet {
 .pattern-header {
   width: 100%;
   background: #7f2e92;
-  padding: 90px 0 30px 0; }
+  padding: 90px 0 30px 0;
+  overflow: hidden; }
   .pattern-header h2.underline {
     color: #fff;
-    border-bottom: 5px solid #b21e8d; }
+    border-bottom: 5px solid #b21e8d;
+    position: relative;
+    z-index: 1; }
+    .pattern-header h2.underline:after {
+      z-index: -10;
+      background: url("../img/title-graphic.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 1000px;
+      content: "";
+      display: block;
+      height: 300px;
+      left: -700px;
+      top: -100px;
+      position: absolute; }
   .pattern-header h5, .pattern-header p {
     color: #fff;
     font-size: 0.9em; }
@@ -1225,6 +1267,17 @@ button.swiper-pagination-bullet {
   .pattern-header p {
     padding-top: 0;
     padding-bottom: 0; }
+  @media (max-width: 812px) {
+    .pattern-header {
+      padding: 50px 0 30px 0; }
+      .pattern-header h2.underline {
+        font-size: 1.25em;
+        margin-left: 10px; }
+      .pattern-header h2.underline:after {
+        top: -40px;
+        left: -600px;
+        width: 800px;
+        height: 200px; } }
 
 .pattern-courses {
   height: auto;
@@ -1334,6 +1387,10 @@ button.swiper-pagination-bullet {
       padding-left: 10px; }
       .pattern-description .col-10 {
         width: 100%; }
+      .pattern-description .col-9 {
+        width: 100%; }
+      .pattern-description p {
+        font-size: 0.9em; }
       .pattern-description h4 {
         font-size: 0.8em; } }
 
@@ -1358,6 +1415,9 @@ button.swiper-pagination-bullet {
     color: #fff; }
   .pattern-banner img {
     width: 50%; }
+  @media (max-width: 812px) {
+    .pattern-banner {
+      display: none; } }
 
 .home-splash {
   width: 100%;
@@ -1570,7 +1630,7 @@ button.swiper-pagination-bullet {
   .about-person ul li {
     list-style-type: none;
     float: left;
-    margin-right: 40px; }
+    margin-right: 20px; }
   .about-person img {
     width: 30.66667%;
     position: absolute;
@@ -1579,6 +1639,40 @@ button.swiper-pagination-bullet {
     background: #fff; }
     .about-person:nth-child(odd) .col-4 {
       left: 0; }
+  @media (max-width: 812px) {
+    .about-person {
+      padding: 25px 10px 0 10px;
+      height: 450px;
+      box-sizing: border-box; }
+      .about-person h2 {
+        font-size: 1.4em; }
+      .about-person p {
+        font-size: 0.7em; }
+      .about-person ul li {
+        margin-right: 15px;
+        margin-top: 8px; } }
+  @media (max-width: 650px) {
+    .about-person {
+      box-sizing: border-box;
+      padding-top: 25px;
+      height: 200px;
+      padding: 40px 10px 0 10px; }
+      .about-person h2 {
+        font-size: 1.1em; }
+      .about-person p {
+        display: none; }
+      .about-person ul li {
+        font-size: 0.8em; } }
+  @media (max-width: 330px) {
+    .about-person {
+      font-size: 0.9em;
+      padding-top: 20px;
+      height: 150px; }
+      .about-person h2 {
+        font-size: 1em; }
+      .about-person ul {
+        margin-top: 7px;
+        font-size: 0.8em; } }
 
 .news-item .row {
   padding: 50px 0;
@@ -1586,6 +1680,26 @@ button.swiper-pagination-bullet {
 .news-item a.link-btn-2 {
   position: absolute;
   bottom: 50px; }
+@media (max-width: 812px) {
+  .news-item {
+    padding: 0 10px;
+    box-sizing: border-box; }
+    .news-item h5 {
+      font-size: 0.85em; }
+    .news-item p {
+      margin-top: 20px;
+      font-size: 0.8em; }
+    .news-item .col-5 {
+      display: none; }
+    .news-item .col-7 {
+      width: 100%; }
+    .news-item p {
+      display: block;
+      margin-bottom: 30px; }
+    .news-item a.link-btn-2 {
+      position: relative;
+      bottom: 0;
+      margin-top: 50px; } }
 
 .news-item:first-child .row {
   padding-top: 0; }

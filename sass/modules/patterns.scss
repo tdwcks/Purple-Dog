@@ -10,10 +10,27 @@
 	width: 100%;
 	background: $colorOne;
 	padding: 90px 0 30px 0;
+	overflow: hidden;
 
 	h2.underline {
 		color: #fff;
 		border-bottom: 5px solid $colorTwo;
+		position: relative;
+		z-index: 1;
+
+		&:after {
+			z-index: -10;
+			background: url('../img/title-graphic.svg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			width: 1000px;
+			content: "";
+			display: block;
+			height: 300px;
+			left: -700px;
+			top: -100px;
+			position: absolute;
+		}
 	}
 
 	h5, p {
@@ -28,6 +45,22 @@
 	p {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	@include mq("medium", "max-width") {
+		padding: 50px 0 30px 0;
+
+		h2.underline {
+			font-size: 1.25em;
+			margin-left: 10px;
+		}
+
+		h2.underline:after {
+			top: -40px;
+			left: -600px;
+			width: 800px;
+			height: 200px;
+		}
 	}
 }
 
@@ -131,8 +164,8 @@
 		h4 {
 			font-size: 1em;
 		}
-
 	}
+
 
 	@include mq("small", "max-width") {
 		padding-top: 20px;
@@ -141,6 +174,14 @@
 
 		.col-10 {
 			width: 100%;
+		}
+
+		.col-9 {
+			width: 100%;
+		}
+
+		p {
+			font-size: 0.9em;
 		}
 
 		h4 {
@@ -175,6 +216,10 @@
 
 	img {
 		width: 50%;
+	}
+
+	@include mq("medium", "max-width") {
+		display: none;
 	}
 }
 

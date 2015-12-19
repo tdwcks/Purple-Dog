@@ -19,6 +19,10 @@
 	&:hover {
 		background: $colorTwo;
 	}
+
+	@include mq("small", "max-width") {
+		padding: 7px 15px;
+	}
 }
 
 .link-btn-3 {
@@ -35,5 +39,33 @@
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-position: 0 2px;
+	}
+}
+
+.link-facebook {
+	display: block;
+	background-image: url('../img/linkedin.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+
+	@include mq("small", "max-width") {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.link-linkedin {
+	display: block;
+	background-image: url('../img/facebook.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 35px;
+	height: 35px;
+
+	@include mq("small", "max-width") {
+		width: 25px;
+		height: 25px;
 	}
 }
