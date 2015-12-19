@@ -47,11 +47,17 @@
 
 			<div class="row">
 
+				<h3>Courses</h3>
+
+			</div>
+
+			<div class="row">
+
 				<div class="course-boxes">
 
 					<a class="link-course-box">
 
-						<img src="" alt=""/>
+						<img src="img/first_aid.jpg" alt=""/>
 
 						<div class="title">
 
@@ -63,11 +69,11 @@
 
 					<a class="link-course-box">
 
-						<img src="" alt=""/>
+						<img src="img/health_safety.jpg" alt=""/>
 
 						<div class="title">
 
-							<h5>First Aid</h5>
+							<h5>Health &amp; Safety</h5>
 
 						</div>
 
@@ -75,17 +81,31 @@
 
 					<a class="link-course-box">
 
-						<img src="" alt=""/>
+						<img src="img/food_safety.jpg" alt=""/>
 
 						<div class="title">
 
-							<h5>First Aid</h5>
+							<h5>Food Safety</h5>
 
 						</div>
 
 					</a>
 
 				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="pattern-steps">
+
+		<div class="grid-container">
+
+			<div class="row">
+
+				<h4>2. Choose a course</h4>
 
 			</div>
 

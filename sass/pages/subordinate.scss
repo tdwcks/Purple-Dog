@@ -177,3 +177,49 @@
 		margin-top: 35px;
 	}
 }
+
+.contact-details {
+	@include mq("medium", "max-width") {
+		padding: 0 10px;
+		box-sizing: border-box;
+		
+		.col-4 {
+			width: 90%;
+		}
+
+		h5 {
+			padding-top: 0.5em;
+		}
+
+		.col-4:last-child {
+			display: none;
+		}
+	}
+
+	@include mq("small", "max-width") {
+		
+		h5, p {
+			font-size: 0.8em;
+		}
+
+	}
+
+	@include mq("nano", "max-width") {
+		
+		h5, p {
+			font-size: 0.7em;
+		}
+		
+	}
+}
+
+#map {
+	width: 100%;
+	height: 450px;
+	margin-bottom: 50px;
+
+	@include mq("small", "max-width") {
+		margin-bottom: 25px;
+		height: 375px;
+	}
+}

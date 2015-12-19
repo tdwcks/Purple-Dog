@@ -77,4 +77,53 @@
 		</div>
 
 	</section>
+
+	<script>
+
+        L.mapbox.accessToken = 'pk.eyJ1IjoidGR3Y2tzIiwiYSI6IlhwMGlGR28ifQ.irq5Rbn1WvGb_VIwn1auNA';
+        var map = L.mapbox.map('map', 'mapbox.light')
+        .setView([53.669557, -1.755114], 16);
+
+        var myLayer = L.mapbox.featureLayer().addTo(map);
+
+        var geoJson = [{
+
+            type: 'Feature',
+            "geometry": { "type": "Point", "coordinates": [-1.755114,53.669557]},
+            "properties": {
+                "icon": {
+                    "iconUrl": "img/map_icon.svg",
+                    "iconSize": [100, 100], // size of the icon
+                    "iconAnchor": [35, 85], // point of the icon which will correspond to marker's location
+                }
+            } 
+
+        }, {
+            // Add Another Point
+        }];
+
+        // Add custom popups to each using our custom feature properties
+        myLayer.on('layeradd', function(e) {
+            var marker = e.layer,
+                feature = marker.feature;
+
+
+        });
+
+        // Set a custom icon on each marker based on feature properties.
+        myLayer.on('layeradd', function(e) {
+            var marker = e.layer,
+                feature = marker.feature;
+
+            marker.setIcon(L.icon(feature.properties.icon));
+        });
+
+
+        // Add features to the map
+        myLayer.setGeoJSON(geoJson);
+
+
+
+       </script>
+
 <?php include("includes/global/footer.php"); ?>

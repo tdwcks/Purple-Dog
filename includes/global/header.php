@@ -9,6 +9,9 @@
 <script src="https://use.typekit.net/qbn3tju.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+
 </head>
 <body>
 
@@ -65,7 +68,7 @@
 					<li><a href="news.php">News</a></li>
 					<li class="dropdown"><a>Courses</a>
 						<ul>
-							<li><a href="">What's Here?</a></li>
+							<li><a href="courses.php">Courses</a></li>
 							<li><a href="">What is here?</a></li>
 						</ul>
 					</li>

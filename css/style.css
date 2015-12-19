@@ -1715,6 +1715,32 @@ button.swiper-pagination-bullet {
     margin: 0 auto;
     margin-top: 35px; }
 
+@media (max-width: 812px) {
+  .contact-details {
+    padding: 0 10px;
+    box-sizing: border-box; }
+    .contact-details .col-4 {
+      width: 90%; }
+    .contact-details h5 {
+      padding-top: 0.5em; }
+    .contact-details .col-4:last-child {
+      display: none; } }
+@media (max-width: 650px) {
+  .contact-details h5, .contact-details p {
+    font-size: 0.8em; } }
+@media (max-width: 330px) {
+  .contact-details h5, .contact-details p {
+    font-size: 0.7em; } }
+
+#map {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 50px; }
+  @media (max-width: 650px) {
+    #map {
+      margin-bottom: 25px;
+      height: 375px; } }
+
 .typography-page {
   margin: 0;
   padding: 50px 0;
