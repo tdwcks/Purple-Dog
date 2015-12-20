@@ -20,9 +20,9 @@ Links:
 * Session #2 Time 1:58
 * Session #3 Time 2:04
 * Session #4 Time 2:19
-* Session #5 Time 5:57
+* Session #5 Time 6:57
 
-Total Time 21:00
+Total Time 22:00
 
 To Do Design: 
 
@@ -32,11 +32,9 @@ To Do Design:
 
 To Do Front-End Dev: 
 
-* On Why Page make the woman outside the box
 * Images need compressing before 🚀🚀🚀🚀🚀
 * Add all SVG's
 * Courses Page 
-* Add Mapbox
 
 
 
