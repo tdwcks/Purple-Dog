@@ -42,6 +42,43 @@
 	}
 }
 
+.link-btn-4 {
+	border: 1px solid #e8e8e8;
+	text-align: center;
+	font-size:0.9em;
+	box-sizing: border-box;
+	padding: 15px 0;
+	display: block;
+	@include border-radius(5px);
+	@include transition(all, 0.2s, ease-in-out);
+
+	&.active {
+		background: $colorOne;
+		border: 1px solid $colorOne;
+		color: #fff;
+
+		&:hover {
+			background: $colorOne;
+			border: 1px solid $colorOne;
+			color: #fff;
+		}
+	}
+
+	&:hover {
+		border: 1px solid $colorOne;
+		color: $colorOne;
+
+	}
+
+}
+
+.link-plus {
+	color: $colorOne;
+	font-size: 0.9em;
+	display: block;
+	margin-top: 20px;
+}
+
 .link-facebook {
 	display: block;
 	background-image: url('../img/linkedin.svg');

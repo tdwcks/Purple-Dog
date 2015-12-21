@@ -68,7 +68,6 @@
 	height: auto;
 	width: 100%;
 
-
 	a.link-course-box {
 		float: left;
 		background: $colorFour;
@@ -81,7 +80,8 @@
 		overflow: hidden;
 		box-sizing: border-box;
 
-		&:nth-child(2) .title {
+
+		&:hover .title {
 			background: rgba(178, 30, 141, 0.9);
 		}
 	}
@@ -95,6 +95,7 @@
 	.title {
 		box-sizing: border-box;
 		width: 100%;
+		@include transition(all, 0.2s, ease-in-out);
 		padding: 15px 20px;
 		background: rgba(127, 46, 146, 0.8);
 		position: absolute;
@@ -148,8 +149,86 @@
 }
 
 .pattern-steps {
-	padding: 75px 0 25px 0;
+	padding: 75px 0 0px 0;
+
+	.course-details {
+		box-sizing: border-box;
+		padding-top: 25px;
+		display: none;
+
+		li {
+			width: 33.3%;
+			box-sizing: border-box;
+			list-style-type: none;
+			padding: 0 15px 0 0;
+			float: left;
+			color: $colorTwo;
+			font-size: 0.75em;
+		}
+	}
+
+	.course-details.active {
+		display: block;
+	}
 }
+
+.review-action {
+	margin-top: 30px;
+	display: block;
+	width: 100%;
+	padding: 30px 0 25px 0;
+	border-top: 1px solid $colorFour;
+	border-bottom: 1px solid $colorFour;
+	margin-bottom: 50px;
+
+	.btn-review {
+		float: left;
+		color: $colorOne;
+
+		span {
+			color: #e8e8e8;
+		}
+	}
+
+	.link-btn-2 {
+		float: right;
+	}
+
+	h5 {
+		float: left;
+	}
+
+	.pattern-stars {
+		float: left;
+		padding: 0;
+		margin-left: 20px;
+
+		li {
+			padding: 0;
+			margin-top: 4px;
+			width: 20px;
+			height: 20px;
+			background: $colorOne;
+			list-style-type: none;
+			float: left;
+			margin-right: 10px;
+		}
+	}
+}
+
+.course-showcase {
+	margin-top: 50px;
+	display: none;
+
+	h4 {
+		padding-bottom: 13px;
+	}
+
+	&.active {
+		display: block;
+	}
+}
+
 
 .pattern-description {
 	padding: 75px 0;
@@ -181,13 +260,68 @@
 		}
 
 		p {
-			font-size: 0.9em;
+			font-size: 0.75em;
 		}
 
 		h4 {
 			font-size: 0.8em;
 		}
 	}	
+}
+
+.pattern-switcher {
+
+	.switch-menu {
+
+		li {
+			float: left;
+			width: 50%;
+			list-style-type: none;
+
+		}
+
+		li h5.active {
+			background: #f7f7f7;
+			color: $colorOne;
+		}
+
+		li h5 {
+			text-align: center;
+			padding: 20px 0;
+			cursor: pointer;
+			background: #e8e8e8;
+			color: $colorType;
+
+			&:hover {
+				color: $colorOne;
+			}
+		}
+	}
+
+	.switch-holders {
+		background: #f7f7f7;
+		
+		.switch-holder {
+			width: 100%;
+			display: none;
+			background: #f7f7f7;
+			height: auto;
+			overflow: auto;
+			padding: 20px 0;
+
+			li {
+				width: 50%;
+				box-sizing: border-box;
+				padding: 2px 15px;
+				float: left;
+				list-style-type: none;
+			}
+
+			&.active {
+				display: block;
+			}
+		}
+	}
 }
 
 .pattern-banner {
