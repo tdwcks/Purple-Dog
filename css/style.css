@@ -397,6 +397,7 @@ input[type="text"] {
   border: 1px solid #e8e8e8;
   outline: 0;
   font-family: "effra", sans-serif;
+  -webkit-appearance: none;
   font-size: 0.7em;
   color: #757575;
   -webkit-transition: all 0.2s ease-in-out;
