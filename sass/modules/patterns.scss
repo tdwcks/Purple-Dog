@@ -36,6 +36,8 @@
 	h5, p {
 		color: #fff;
 		font-size: 0.9em;
+		position: relative;
+		z-index: 1;
 	}
 
 	h5 {
@@ -61,6 +63,14 @@
 			width: 800px;
 			height: 200px;
 		}
+	}
+
+	@include mq("small", "max-width") {
+
+		.col-9 {
+			display: none;
+		}
+
 	}
 }
 
@@ -118,6 +128,10 @@
 		}
 	}
 
+	&.courses-page .link-course-box {
+		margin-bottom: 25px;
+	}
+
 	@include mq("medium", "max-width") {
 		padding: 0 10px;
 		box-sizing: border-box;
@@ -149,7 +163,11 @@
 }
 
 .pattern-steps {
-	padding: 75px 0 0px 0;
+	padding-top: 25px;
+
+	.row {
+		margin-top: 0;
+	}
 
 	.course-details {
 		box-sizing: border-box;
@@ -165,10 +183,35 @@
 			color: $colorTwo;
 			font-size: 0.75em;
 		}
+
+		@include mq("medium", "max-width") {
+			li {width: 50%;}
+		}
+
+		@include mq("small", "max-width") {
+			li {width: 100%;}
+		}
+	}
+
+	p {
+		padding-bottom: 20px;
 	}
 
 	.course-details.active {
 		display: block;
+	}
+
+	@include mq("medium", "max-width") {
+		padding: 0 15px;
+		padding-top: 25px;
+
+		h4 {
+			font-size: 1em;
+		}
+
+		p {
+			font-size: 0.8em;
+		}
 	}
 }
 
@@ -214,6 +257,57 @@
 			margin-right: 10px;
 		}
 	}
+
+	@include mq("medium", "max-width") {
+		
+		.pattern-stars {
+			float: right;
+			padding-bottom: 25px;
+		}
+	}
+
+	@include mq("small", "max-width") {
+
+		.pattern-stars li {
+			width: 15px;
+			height: 15px;
+		}
+
+	}
+}
+
+
+.pattern-banner {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	@include border-radius(10px);
+	margin-bottom: 20px;
+	background: $colorOne;
+	position: relative;
+
+	h2 {
+		color: #fff;
+		padding-top: 155px;
+
+	}
+
+	.col-4 {
+		margin: 120px 0 0 180px;
+	}
+
+	h4 {
+		color: #fff;
+
+	}
+
+	img {
+		width: 50%;
+	}
+
+	@include mq("medium", "max-width") {
+		display: none;
+	}
 }
 
 .course-showcase {
@@ -227,8 +321,28 @@
 	&.active {
 		display: block;
 	}
-}
 
+	@include mq("medium", "max-width") {
+
+		.video-holder {
+			padding: 25px 0;
+		}
+		
+		.col-8, .col-4 {
+			width: 100%;
+		}
+	}
+
+	@include mq("small", "max-width") {
+
+		h5 {
+			font-size: 0.9em;
+		}
+		p {
+			font-size: 0.8em;
+		}
+	}	
+}
 
 .pattern-description {
 	padding: 75px 0;
@@ -296,6 +410,13 @@
 				color: $colorOne;
 			}
 		}
+
+		@include mq("small", "max-width") {
+			
+			li h5 {
+				font-size: 0.9em;
+			}
+		}
 	}
 
 	.switch-holders {
@@ -313,6 +434,8 @@
 				width: 50%;
 				box-sizing: border-box;
 				padding: 2px 15px;
+				border: 1px solid $colorFour;
+				display: block;
 				float: left;
 				list-style-type: none;
 			}
@@ -321,41 +444,437 @@
 				display: block;
 			}
 		}
+
+		@include mq("medium", "max-width") {
+			
+			.switch-holder li {
+				width: 100%;
+				font-size: 0.9em;
+				box-sizing: border-box;
+				line-height: 1.2em;
+			}
+
+			.link-btn-4 {
+				padding: 15px 15px;
+				box-sizing: border-box;
+			}
+		}
 	}
 }
 
-.pattern-banner {
-	width: 100%;
-	height: 400px;
-	overflow: hidden;
-	@include border-radius(10px);
-	margin-bottom: 20px;
-	background: $colorOne;
-	position: relative;
+.pattern-date {
+	margin-top: 25px;
 
-	h2 {
-		color: #fff;
-		padding-top: 155px;
-
+	ul li {
+		list-style-type: none;
+		float: left;
 	}
 
-	.col-4 {
-		margin: 120px 0 0 180px;
+	.month-holder li {
+		text-transform: uppercase;
+		padding: 15px 15px;
+		background: #e8e8e8;
+		margin-right:  7px;
+		margin-bottom: 0;
+		cursor: pointer;
+		font-size: 0.8em;
+
+		&:hover h5 {
+			color: $colorTwo;
+		}
 	}
 
-	h4 {
-		color: #fff;
-
+	.month-holder li h5 {
+		color: $colorType;
+		font-size: 1em;
 	}
 
-	img {
-		width: 50%;
+	.month-holder li.active {
+		background: $colorFour;
+
+		h5 {
+			color: $colorTwo;
+		}
+	}
+
+	.dates-holder {
+		width: 100%;
+		padding: 15px 0px;
+		box-sizing: border-box;
+		background: $colorFour;
+		clear: both;
+		display: none;
+		height: auto;
+		overflow: auto;
+		margin-bottom: 50px;
+
+		li {
+			@include calc(width, "50% - 20px");
+			height: auto;
+			@include transition(all, 0.2s, ease-in-out);
+			overflow: auto;
+			box-sizing: border-box;
+			padding: 15px 15px;
+			margin:  10px 10px;
+			border: 1px solid #e8e8e8;
+			@include border-radius(5px);
+			float: left;
+			list-style-type: none;
+			cursor: pointer;
+		}
+
+		li:hover {
+			border: 1px solid $colorTwo;
+		}
+
+		li.active {
+			border: 1px solid $colorOne;
+			background: $colorOne;
+
+			h5, span, span.spaces {
+				color: #fff;
+			}
+		}
+
+		li h5 {
+			font-size: 0.8em;
+			color: $colorType;
+		}
+
+		li span {
+			color: $colorType;
+			font-size: 0.8em;
+			font-weight: $regular;
+		}
+
+		li span.spaces {
+			color: red;
+		}
+	}
+
+	.dates-holder.active {
+		display: block;
 	}
 
 	@include mq("medium", "max-width") {
-		display: none;
+		box-sizing: border-box;
+		@include calc(width, "100% - 30px");
+			
+		.month-holder {
+			height: auto;
+			overflow: auto;
+			margin-left: 15px;
+			padding: 0 0 8px 0;
+			width: 100%;
+			box-sizing: border-box !important;
+		}
+
+		.dates-holder {
+			padding: 0;
+			padding: 20px;
+			margin: 0px 15px 0px 15px;
+			box-sizing: border-box !important;
+		}
+
+		.dates-holder li {
+			margin: 0;
+			margin-bottom: 20px;
+			width: 100%;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.month-holder li {
+			@include calc(width, "17.2% - 40px");
+			text-align: center;
+
+			&:nth-child(6) {
+				margin-right: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}	
+	}
+
+	@include mq("small", "max-width") {
+		
+		.month-holder li {
+			@include calc(width, "25% - 6px");
+			padding: 10px 0;
+
+			&:nth-child(4) {
+				margin-right: 0px;
+			}
+
+			&:nth-child(6) {
+				margin-right: 8px;
+			}
+
+			&:nth-child(8) {
+				margin-right: 0px;
+			}
+
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+
+	@include mq("nano", "max-width") {
+		.dates-holder li {
+			font-size: 0.7em;
+		}
 	}
 }
 
+.pattern-attendees {
+	background: $colorFour;
+	margin-top: 25px;
 
+	.attendees-picker {
+		padding: 20px 0;
+		height: auto;
+		overflow: auto;
 
+		li {
+			list-style-type: none;
+			padding: 15px 40px;
+			text-align: center;
+			@include calc(width, "12.5% - 20px");
+			box-sizing: border-box;
+			margin-right: 20px;
+			float: left;
+			border: 1px solid #e8e8e8;
+			@include transition(all, 0.2s, ease-in-out);
+			@include border-radius(5px);
+			cursor: pointer;
+
+			&:hover {
+				border: 1px solid $colorOne;
+				color: $colorOne;
+			}
+
+			&.active {
+				background: $colorOne;
+				border: 1px solid $colorOne;
+				color: #fff;
+			}
+		}
+
+		span {
+			color: $colorType;
+			font-weight: $light;
+			font-size: 0.7em;
+			width: 50%;
+		}
+	}
+
+	.attendees-options {
+		padding: 30px;
+		height: auto;
+		overflow: auto;
+		border-top: 1px solid #e8e8e8;
+
+		.link-btn-2 {
+			display: block;
+			padding: 10px 35px;
+			margin: 0 auto;
+		}
+
+	}
+
+	@include mq("medium", "max-width") {
+		
+		.attendees-picker {
+			margin-left: 10px;
+			margin-right: 10px;
+
+			span {
+				font-size: 0.6em;
+				line-height: 1.1em;
+			}
+
+			li {
+				box-sizing: border-box;
+				text-align: center;
+				@include calc(width, "12.5% - 25px");
+				padding: 14px 14px;
+			}
+		}
+
+	}
+
+	@include mq("small", "max-width") {
+
+		.attendees-picker {
+			margin-left: 0px;
+
+			span {
+				text-align: center;
+				display: block;
+				width: 85%;
+				margin: 0 auto;
+				height: auto;
+				overflow: auto;
+				padding-top: 20px;
+				margin-top: 30px;
+				line-height: 1.2em;
+			}
+		}
+
+		.attendees-picker li {
+			@include calc(width, "33.3% - 15px");
+			margin-right: 0;
+			margin-left: 15px;
+		}
+	}
+}
+
+.pattern-cart {
+	padding: 25px 0;
+	background: $colorFour;
+	margin-top: 25px;
+
+	h4 {
+		font-size: 0.75em;
+		color: $colorType;
+	}
+
+	table {
+		width: 100%;
+		clear: both;
+		margin-top: 20px;
+
+		thead {
+			width: 100%;
+			height: auto;
+			overflow: auto;
+			padding: 10px;
+			color: $colorType;
+			border-top: 1px solid #e8e8e8;
+			border-bottom: 1px solid #e8e8e8;
+		}
+
+		thead th {
+			padding: 10px 0;
+			color: $colorOne;
+			font-size: 0.8em;
+			text-align: left;
+		}
+
+		tr {
+			border-bottom: 1px solid #e8e8e8;
+		}
+
+		tr.totals {
+			clear: both;
+
+			td {
+				color: $colorType;
+				padding: 10px 0;
+				
+			}
+
+			td.total-title {
+				text-align: right;
+				color: $colorOne;
+				box-sizing: border-box;
+				padding-right: 40px;
+			}
+			
+		}
+
+		tr td {
+			padding: 20px 0;
+			font-size: 0.8em;
+			color: $colorOne;
+		}
+	}
+
+	.link-btn-2 {
+		display: block;
+		margin: 0 auto;
+	}
+
+	span.helper {
+		display: block;
+		font-weight: $light;
+		line-height: 1.3em;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 0.7em;
+		color: $colorType;
+	}
+
+	@include mq("medium", "max-width") {
+		
+		h4 {
+			margin-left: 15px;
+		}
+
+		.col-4 {
+			width: 100%;
+			margin: 15px 0;
+		}
+
+		.col-4:first-child {
+			margin-top: 30px;
+		}
+
+		table {
+
+			tr td:last-child, thead th:last-child {
+				text-align: right;
+			}
+
+			tr.totals td.total-title {
+				text-align: left;
+			}
+
+			margin-left: 15px;
+			@include calc(width, "100% - 30px");
+			margin-right: 15px;
+		}
+	}
+
+	@include mq("nano", "max-width") {
+		tr td h5, tr td p {
+			font-size: 0.8em;
+		}
+	}
+}
+
+.pattern-forms {
+	margin-top: 30px;
+	padding: 40px 0;
+	display: block;
+	height: auto;
+	overflow: auto;
+	background: $colorFour;
+
+	form .col-6, fieldset, input {
+		box-sizing: border-box;
+	}
+
+	.row {
+		margin-top: 0;
+	}
+
+	.col-6 {
+		float: left;
+	}
+
+	@include mq("small", "max-width") {
+		padding: 15px 15px 30px 15px;
+
+		.col-6 {
+			width: 100%;
+		}
+
+	}
+
+}

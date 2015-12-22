@@ -4,3 +4,41 @@
 // 			Digital Experiences
 // 		Forms
 // =================================================================
+
+label {
+	font-size: 0.75em;
+	color: $colorType;
+	padding-bottom: 10px;
+}	
+
+fieldset {
+	margin-top: 15px;
+	box-sizing: border-box;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 18px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	@include border-radius(5px);
+	border: 1px solid #e8e8e8;
+	outline: 0;
+	font-family: $base-font-family;
+	font-size: 0.7em;
+	color: $colorType;
+	@include transition(all, 0.2s, ease-in-out);
+
+	&:focus {
+		border: 1px solid $colorOne;
+		color: $colorOne;
+	}
+
+	@include mq("small", "max-width") {
+		padding: 12px 17px;
+	}
+
+	@include mq("nano", "max-width") {
+		padding: 10px 13px;
+	}
+}

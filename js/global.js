@@ -27,6 +27,34 @@ ResponsiveJS.bind('(min-width: 320px) and (max-width: 810px)',
 		$('nav').toggleClass('menu-active');
 	}
 
+	// Put Courses Video After title Fix I tired to be too clever
+
+	$(".active #js-video").insertBefore("#js-paragraph");
+
+	// Scroll to clicked item
+
+	$(".js-course-picker").on( "click", coursePick);
+
+	function coursePick() {
+		var id = $(this).attr('id')
+		var courseId = '#course-' + id;
+
+		// Removes active from everything 
+
+		$('.js-course-picker').removeClass('active');
+		$('.course-showcase').removeClass('active');
+
+		// Add's Active To New Item
+
+		$(this).toggleClass('active');
+		$(courseId).toggleClass('active');
+		$("html, body").animate({ scrollTop: $(courseId).offset().top }, 1000);
+	}
+
+	// Get rid of break
+
+	$('#js-break').html('Looking for courses for more than 12 attendees we can adapt our courses for you. Call Ian on 01484 546780')
+
 });
 
 $(function(){ 
@@ -88,5 +116,44 @@ $(function(){
 		$(".course-details").toggleClass('active');
 	}
 
+	// Date picker
+
+	$(".js-date-picker").on( "click", monthPick);
+
+	function monthPick() {
+		var id = $(this).attr('id')
+		var monthId = '#month-' + id;
+
+		// Removes active from everything 
+
+		$('.js-date-picker').removeClass('active');
+		$('.dates-holder').removeClass('active');
+
+		// Add's Active To New Item
+
+		$(this).addClass('active');
+		$(monthId).addClass('active');
+
+	}
+
+	// session selector
+
+	$(".js-session-selector").on( "click", selectSession);
+
+	function selectSession() {
+
+		$(".js-session-selector").removeClass('active');
+		$(this).addClass('active');
+	}
+
+	// Attendee Picker
+
+	$(".js-attendee-picker").on( "click", selectAttendees);
+
+	function selectAttendees() {
+
+		$(".js-attendee-picker").removeClass('active');
+		$(this).addClass('active');
+	}
 
 });
