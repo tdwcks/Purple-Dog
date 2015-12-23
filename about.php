@@ -56,7 +56,7 @@
 
 				</div>
 
-				<img src="img/helen.png" alt="Helen Ashcroft"/>
+				<img src="img/about_helen.png" alt="Helen Ashcroft"/>
 
 			</div>
 
@@ -120,7 +120,7 @@
 
 				</div>
 
-				<img src="img/iain.png" alt="Helen Ashcroft"/>
+				<img src="img/about_iain.png" alt="Helen Ashcroft"/>
 
 			</div>
 
@@ -134,7 +134,7 @@
 
 			<div class="row">
 
-				<img src="img/aarron.png" alt="Steve Moss"/>
+				<img src="img/about_aaron.png" alt="Steve Moss"/>
 
 				<div class="col-8 col-right">
 
