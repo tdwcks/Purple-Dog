@@ -23,6 +23,7 @@ Links:
 * Session #5 Time 6:57
 * Session #6 Time 3:16
 * Session #7 Time 6:01
+* Session #8 Time 1:04
 
 Total Time 31:17
 
