@@ -56,7 +56,7 @@
 
 				</div>
 
-				<img src="img/about_helen.png" alt="Helen Ashcroft"/>
+				<img src="img/helen-2.png" alt="Helen Ashcroft"/>
 
 			</div>
 
