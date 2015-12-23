@@ -35,7 +35,7 @@
 		width: 30px;
 		margin-left: 15px;
 		height: 20px;
-		background-image: url('../img/purple_arrow.svg');
+		background-image: url('../img/arrow_purple.svg');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-position: 0 2px;
@@ -76,6 +76,27 @@
 	font-size: 0.9em;
 	display: block;
 	margin-top: 20px;
+	overflow: visible;
+
+	&:after {
+		display: inline-block;
+		content: "";
+		width: 20px;
+		margin-left: 15px;
+		box-sizing: content-box;
+		height: 20px;
+		overflow: visible;
+		background-image: url('../img/accordian_open.svg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: 0;
+	}
+
+	&.active:after {
+		background-image: url('../img/accordian_close.svg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
 }
 
 .link-facebook {

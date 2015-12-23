@@ -113,6 +113,7 @@ $(function(){
 	$(".js-accrodian-course").on( "click", launchAccordian);
 
 	function launchAccordian() {
+		$(this).toggleClass('active');
 		$(".course-details").toggleClass('active');
 	}
 

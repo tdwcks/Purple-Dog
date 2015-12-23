@@ -186,15 +186,16 @@
 
 			</div>
 
-			<div class="row border">
+			<div class="row">
 
-				<a class="col-3"></a>
+				<ul class="home-logos">
 
-				<a class="col-3"></a>
+					<li><img src="img/accreditations/chartered_insitute.jpg"></li>
+					<li><img src="img/accreditations/highfield.jpg"></li>
+					<li><img src="img/accreditations/pacific_institute.jpg"></li>
+					<li><img src="img/accreditations/qualsafe_awards.jpg"></li>
 
-				<a class="col-3"></a>
-
-				<a class="col-3"></a>
+				</ul>
 
 			</div>
 
@@ -212,27 +213,22 @@
 
 			</div>
 
-			<div class="row border">
+			<div class="row">
 
-				<a class="col-3"></a>
+				<ul class="home-logos">
 
-				<a class="col-3"></a>
+					<li><img src="img/clients/barnsley.jpg"></li>
+					<li><img src="img/clients/calderdale.jpg"></li>
+					<li><img src="img/clients/fresh_horizons.jpg"></li>
+					<li><img src="img/clients/kirklees.jpg"></li>
+					<li><img src="img/clients/leeds.jpg"></li>
+					<li><img src="img/clients/mid_yorkshire.jpg"></li>
+					<li><img src="img/clients/pre_school_alliance.jpg"></li>
+					<li><img src="img/clients/sure_start.jpg"></li>
+					<li><img src="img/clients/syngenta.jpg"></li>
+					<li><img src="img/clients/wakefield.jpg"></li>
 
-				<a class="col-3"></a>
-
-				<a class="col-3"></a>
-
-			</div>
-
-			<div class="row border">
-
-				<a class="col-3"></a>
-
-				<a class="col-3"></a>
-
-				<a class="col-3"></a>
-
-				<a class="col-3"></a>
+				</ul>
 
 			</div>
 
