@@ -251,10 +251,12 @@
 			margin-top: 4px;
 			width: 20px;
 			height: 20px;
-			background: $colorOne;
+			background-image: url('../img/review_stars.svg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
 			list-style-type: none;
 			float: left;
-			margin-right: 10px;
+			margin-right: 5px;
 		}
 	}
 

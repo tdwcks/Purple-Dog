@@ -1535,10 +1535,12 @@ button.swiper-pagination-bullet {
       margin-top: 4px;
       width: 20px;
       height: 20px;
-      background: #7f2e92;
+      background-image: url("../img/review_stars.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
       list-style-type: none;
       float: left;
-      margin-right: 10px; }
+      margin-right: 5px; }
   @media (max-width: 812px) {
     .review-action .pattern-stars {
       float: right;
@@ -2210,7 +2212,7 @@ button.swiper-pagination-bullet {
   .about-person img {
     width: 30.66667%;
     position: absolute;
-    bottom: 0; }
+    bottom: 0px; }
   .about-person:nth-child(odd) {
     background: #fff; }
     .about-person:nth-child(odd) .col-4 {
